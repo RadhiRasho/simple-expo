@@ -1,20 +1,28 @@
 {
-  "expo": {
-    "scheme": "acme",
-    "userInterfaceStyle": "automatic",
-    "orientation": "default",
-    "web": {
-      "output": "static"
-    },
-    "plugins": [
-      [
-        "expo-router",
-        {
-          "origin": "https://n"
-        }
-      ]
-    ],
-    "name": "simple-expo",
-    "slug": "simple-expo"
-  }
+	"expo": {
+		"scheme": "acme",
+		"userInterfaceStyle": "automatic",
+		"orientation": "default",
+		"web": {
+			"output": "static"
+		},
+		"plugins": [
+			[
+				"expo-router",
+				{
+					"origin": "https://n"
+				}
+			],
+			[
+				"expo-camera",
+				{
+					"cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+					"microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+					"recordAudioAndroid": true
+				}
+			]
+		],
+		"name": "simple-expo",
+		"slug": "simple-expo"
+	}
 }
